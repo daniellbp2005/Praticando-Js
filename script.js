@@ -32,7 +32,6 @@ function tipos(){
     cidade = "Scs"
     escola = "Senai"
 
-    
     console.log(nome, "-", typeof nome)
     console.log(idade, "-", typeof idade)
     console.log(profissao, "-", typeof profissao)
@@ -46,7 +45,6 @@ function coverter(){
     let numm = 100
     console.log(typeof num)
 
-    
     let numconvertido = Number(num)
     console.log(typeof numconvertido)
 
@@ -62,7 +60,6 @@ function desafio(){
     peso = "Sei não"
     cidade = "Scs"
     profissao ="Estudante"
-
 
     console.log("Nome: ",nome," \n")
     console.log("Idade: ",idade," \n")
