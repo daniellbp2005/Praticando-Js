@@ -10,7 +10,7 @@ function valorPedido(){
     }else {
         console.log(`O valor do Frete é 20R$`);
     }
-}
+}valorPedido();
 
 function idadeConvite(){
     let idade = Number(prompt(`Digite sua idade: `));
@@ -21,7 +21,7 @@ function idadeConvite(){
     } else{
         console.log("Não pode entrar");
     }
-}
+}idadeConvite();
 function notas(){
     let nota = prompt(`Digite sua Nota: `)
     if(nota >= 90){
@@ -35,7 +35,7 @@ function notas(){
     }else{
         console.log("Conceito F");
     }
-}
+}notas();
 
 function IMC (){
     let peso = Number(prompt(`Digite seu peso em kilos:`))
@@ -51,7 +51,7 @@ function IMC (){
     }else{
         console.log("Vc está abaxo do peso");
     }
-}
+}IMC();
 
 function estoque(){
     let estoque = Number(prompt(`Digite a quantidade de produtos disponiveis`))
@@ -64,67 +64,67 @@ function estoque(){
         console.log("Esgotado");
     }
 }
-// let idade = prompt(`Digite uma idade`);
-// if(idade >= 18){
-//     console.log("maior d idade");
-// }else {
-//     console.log("menor d idade");
-// }
+let idade = prompt(`Digite uma idade`);
+if(idade >= 18){
+    console.log("maior d idade");
+}else {
+    console.log("menor d idade");
+}estoque();
 
 
-// let numero = prompt(`Digite um NUmero`);
-// if ( numero <= 0){
-//     console.log("Negativo");
-// } else{
-//     console.log("Positivo");
-// }
+let numero = prompt(`Digite um NUmero`);
+if ( numero <= 0){
+    console.log("Negativo");
+} else{
+    console.log("Positivo");
+}
 
-// let nota = prompt(`Digite uma nota`);
-// if( nota >= 60){
-//     console.log("Aprovadp");
-// }else{
-//     console.log("Reprovado");
-// }
+let nota = prompt(`Digite uma nota`);
+if( nota >= 60){
+    console.log("Aprovadp");
+}else{
+    console.log("Reprovado");
+}
 
-// let num = prompt(`Digite um numero`);
-// if(num == 0){
-//     console.log("Ele é zero");
-// }else if(num >=1){
-//     console.log("Ele é positivo");
-// }else{
-//     console.log("Ele é negativo");
-// }
+let num = prompt(`Digite um numero`);
+if(num == 0){
+    console.log("Ele é zero");
+}else if(num >=1){
+    console.log("Ele é positivo");
+}else{
+    console.log("Ele é negativo");
+}
 
-// let idade1 = prompt(`Digite sua idade`);
-// if(idade1 < 13){
-//     console.log("Crinça");
-// }else if( idade1 >= 13 && idade1 < 18){
-//     console.log("Adolescente");
-// }else{
-//     console.log("Adulto");
-// }
+let idade1 = prompt(`Digite sua idade`);
+if(idade1 < 13){
+    console.log("Crinça");
+}else if( idade1 >= 13 && idade1 < 18){
+    console.log("Adolescente");
+}else{
+    console.log("Adulto");
+}
 
 
-// let nume = prompt(`Digite um numero`);
-// if(nume% 2 == 0){
-//     console.log("Par");
-// }else {
-//     console.log("Impar");
-// }
+let nume = prompt(`Digite um numero`);
+if(nume% 2 == 0){
+    console.log("Par");
+}else {
+    console.log("Impar");
+}
 
-// let ope = prompt(`Digite uma operação`);
-// let nume1 = Number(prompt(`Digite um numero`))
-// let nume2 = Number(prompt(`Digite outro numero`))
+let ope = prompt(`Digite uma operação`);
+let nume1 = Number(prompt(`Digite um numero`))
+let nume2 = Number(prompt(`Digite outro numero`))
 
-// if(ope == "+"){
-//     console.log(nume1 + nume2);
-// }else if(ope =="-"){
-//     console.log(nume1 - nume2);
-// }else if(ope =="*"){
-//     console.log(nume1 * nume2);
-// }else{
-//     console.log(nume1 / nume2);
-// }
+if(ope == "+"){
+    console.log(nume1 + nume2);
+}else if(ope =="-"){
+    console.log(nume1 - nume2);
+}else if(ope =="*"){
+    console.log(nume1 * nume2);
+}else{
+    console.log(nume1 / nume2);
+}
 
 let maior1 = Number(prompt(`Digite o valor da compra`));
 
