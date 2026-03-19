@@ -1,3 +1,5 @@
+// pratcando estruturas condiconais
+
 function Textoo(){
     const nome = "Daniel Lozano";
     var idade = 20;
