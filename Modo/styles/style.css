@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+div{
+    padding: 2rem;
+}
+.centralizar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+.lado-e{
+    width: 50%;
+}
+.lado-d{
+    width: 50%;
+}
+#curtir{
+    width: 100%;
+}
+img{
+    width: 20%;
+    height: 100%; 
+}
+#caixa{
+    width:36%;
+    background:linear-gradient(0deg,#ff0000,#00ddff);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 1.5rem;
+    transition: transform .2s ease-in-out;
+}
+#caixa:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 5px black;
+}
+button{
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    transition: transform .2s ease-in-out;
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color: black;
+    color: white;
+    border: 1px blue solid;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+#form-p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    color: black;
+}
+input{
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.btn-form{
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    transition: transform .2s ease-in-out;
+}
