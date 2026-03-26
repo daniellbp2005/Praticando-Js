@@ -5,6 +5,12 @@ let lista = document.getElementById("lista");
 
 //primeirp c cria o elemento, dps add
 //alt + shit + s alinha a file
+const carrinho = []
+const produtos = [
+    {id: 1, nome: "batata", preco: 10.50 },
+    {id: 2, nome: "Arroz", preco: 20.0}
+];
+
 btnAdd.addEventListener("click", () => {
     const li = document.createElement("li");//cria a mesma tag li do html, mas não a adiciona na página
     li.innerText = "pera";
