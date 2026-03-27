@@ -18,7 +18,7 @@ function Arrow(){
     console.log(numDobrados);
 
     numeros.map(num =>{
-        let resultado = num *2;
+        let resultado = num *2a  ;
     return resultado    
 })
 }

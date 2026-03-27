@@ -1,0 +1,95 @@
+:root {
+    --bg: #121212;
+    --text: #e5e5e5;
+    --card-bg: #1f1f1f;
+    --input-bg: #262626;
+    --input-border: #444;
+    --input-text: #f1f1f1;
+    --button-bg: #8d7a6c;
+    --button-color: #ffffff;
+    --button-hover: #be7b4e;
+    --danger-bg: #c62828;
+    --danger-hover: #a02626;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    width: 200px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+}
+
+/* Botões */
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Itens da lista */
+li {
+    background-color: var(--card-bg);
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botão de remover */
+li button {
+    background-color: var(--danger-bg);
+    color: var(--button-color);
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background-color: var(--danger-hover);
+}
+
+/* Texto do pedido atual */
+#pedidoAtual {
+    margin-top: 20px;
+    font-weight: bold;
+}
