@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at center bottom, #e0f7fa, #0277bd, #01579b);
+    font-family: Arial, sans-serif;
+}
+
+.paizao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    background-color: #4fc3f7;
+    border: none;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+    width: 60rem;
+    padding-bottom: 2rem;
+}
+
+.paizao:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.paizao p {
+    font-size: 24px;
+    color: #5e5b5b;
+    margin-top: 10px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+input,
+select {
+    padding: 10px;
+    margin: 20px;
+    width: 55rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #e1f5fe;
+    padding: 15px;
+    border-radius: 12px;
+    width: 25rem;
+    text-align: left;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 25px;
+    row-gap: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #0277bd;
+}
+
+.card p {
+    font-size: 14px;
+    color: #5e5b5b;
+    font-weight: bold;
+}
+
+.mensagem{
+    grid-column: 1/-1;
+    margin: 0 auto;
+    font-size: 18px;
+}

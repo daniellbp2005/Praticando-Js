@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Catálogo de Produtos</h1>
+    <div class="paizao">
+        <p>Faça sua Pesquisa</p>
+        <div class="filtros">
+            <input type="text" id="campoBusca" placeholder="Digite Aqui...">
+
+            <select name="" id="ordenacao">
+                <option value="nome-az">Nome (A-Z)</option>
+                <option value="nome-za">Nome (Z-A)</option>
+                <option value="preco-menor">Menor Preço</option>
+                <option value="preco-maior">Maior Preço</option>
+            </select>
+            <div id="listaProdutos" class="lista-produtos"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
