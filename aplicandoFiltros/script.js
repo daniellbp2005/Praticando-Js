@@ -185,7 +185,6 @@ function mostrarProdutos() {
     }
 }
 
-
 campoBusca.addEventListener("input", ()=>{ // enquanto o user digita o capo é att instantaniamente
     mostrarProdutos()
 })

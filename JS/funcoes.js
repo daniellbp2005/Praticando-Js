@@ -18,7 +18,7 @@ function Arrow(){
     console.log(numDobrados);
 
     numeros.map(num =>{
-        let resultado = num *2a  ;
+        let resultado = num * 2 ;
     return resultado    
 })
 }
@@ -104,12 +104,17 @@ function to(){
 }
 to()
 
+
+
 function foreach(){
+        //lista → filter → nova lista → forEach → ação (criar card)
+        //filter → decide QUEM entra
+        // forEach → decide O QUE fazer com eles
     let nomes = ["Kleber","Agata","Evylim","Gabriel"];
 
     nomes.forEach(nome => console.log("Seu nome é:",nome))
+    
 }foreach();
-
 
 //SOME ->verifca se pelos menos um item atende a condição que passar, mas não mostra qual.
 
