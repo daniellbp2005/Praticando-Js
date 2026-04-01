@@ -74,3 +74,10 @@ button:hover{
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+
+.imagemProd{
+    width: 100px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #000b33;
+}
