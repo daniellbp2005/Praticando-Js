@@ -26,6 +26,13 @@ body {
   margin-bottom: 15px;
 }
 
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #btn-add {
   padding: 10px;
   margin-bottom: 15px;
@@ -39,6 +46,25 @@ body {
 
 #lista {
   list-style: none;
+
+}
+
+p {
+  background-color: #020037;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
 }
 
 /* Itens da lista */
@@ -46,8 +72,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
-  padding: 10px;
+  margin: 5px 0;
   background-color: #f9f9f9;
   border-radius: 6px;
+  width: 100%;
+}
+
+#texto{
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 12px;
+  outline: none;
+  height: 35px;
+  padding: 8px 16px;
+  transition: trasnform .2s ease-in-out;
+}
+
+#texto:hover{
+  transform: translateY(-3px);
+}
+#texto:focus{
+  outline: none;
+  border: 2px solid red;
+}
+
+#inputBtn{
+  background-color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 10px;
+  color: white;
 }
