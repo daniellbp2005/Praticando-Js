@@ -4,7 +4,7 @@ let lista = document.getElementById("lista");
 let texto = document.getElementById("texto");
 let inputBtn = document.getElementById("inputBtn");
 let teste = document.querySelector(".teste");
-
+var listaFinal;
 
 //primeirp c cria o elemento, dps add
 //alt + shit + s alinha a file
@@ -15,44 +15,77 @@ const produtos = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    produtos.forEach(element => {
+    const pegar = localStorage.getItem("tarefas");
+    if (pegar == null) {
+        listaFinal = produtos
+    } else {
+        listaFinal = JSON.parse(pegar);
+    }
+
+    listaFinal.forEach(element => {
 
         const botao = document.createElement('button')
         const paragrafo = document.createElement('p')
         const li2 = document.createElement("li")
 
+        
         botao.innerText = "✖️";
         paragrafo.innerText = element.nome;
 
         botao.addEventListener("click", () => {
-            paragrafo.remove();
+            li2.remove();
+            const tirar = element.id;
+            listaFinal = listaFinal.filter(item => item.id !== tirar);
+            let converter = JSON.stringify(listaFinal);
+            localStorage.setItem("tarefas", converter)
         })
 
         lista.appendChild(li2)
         li2.appendChild(paragrafo);
         paragrafo.appendChild(botao);
-    });
+    })
 })
 
 inputBtn.addEventListener("click", () => {
 
-    const li2 = document.createElement("li")
-    const novo = document.createElement("p");
+    if (texto.value.trim() !== "") {
+        const li2 = document.createElement("li")
+        const novo = document.createElement("p");
 
-    novo.innerHTML = texto.value;
-    texto.value = "";
+        let newText = {
+            id: listaFinal.length + 1,
+            nome: texto.value,
+            preco: 15.00
+        }
 
-    let newBtn = document.createElement("button");
-    newBtn.innerHTML = "✖️";
-    
-    newBtn.addEventListener("click", () => {
-        novo.remove();
-    })
+        novo.innerHTML = texto.value;
+        texto.value = "";
 
-    lista.appendChild(li2);
-    li2.appendChild(novo);
-    novo.appendChild(newBtn);
+        let newBtn = document.createElement("button");
+        newBtn.innerHTML = "✖️";
+
+
+        newBtn.addEventListener("click", () => {
+            li2.remove();
+            const remover= newText.id;
+            listaFinal = listaFinal.filter(item => item.id !== remover);
+            let convertido  =  JSON.stringify(listaFinal);
+            localStorage.setItem("tarefas",convertido);
+        })
+
+        lista.appendChild(li2);
+        li2.appendChild(novo);
+        novo.appendChild(newBtn);
+
+        listaFinal.push(newText);
+        let newProd = JSON.stringify(listaFinal)
+        localStorage.setItem("tarefas", newProd);
+
+    } else {
+    }
 })
+
+// teste 
 
 // btnAdd.addEventListener("click", () => {
 
